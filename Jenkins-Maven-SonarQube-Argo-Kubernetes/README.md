@@ -24,7 +24,7 @@ No: The pipeline exits, and a report is sent.
 
 **7. Docker Image Creation:** A new Docker image is created with the updated code and pushed to DockerHub.
 
-**8. Image Updater:** A process (Image Updater) detects the new image in DockerHub and updates the image in the Manifests Repo.
+**8. Argo Image Updater (used shell script):** detects the new image in DockerHub and updates the image in the Manifests Repo.
 
 **9. Argo CD:** Argo CD, a continuous deployment tool, pulls the new image from the Manifests Repo and updates the running Kubernetes cluster with the new deployment.
 
